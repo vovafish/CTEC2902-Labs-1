@@ -16,8 +16,12 @@ namespace ConsoleApp
         {
           
             string greeting = Properties.Settings.Default.GreetingMessage;
-            Console.WriteLine(greeting);            string tiredMessage = ConfigurationManager.AppSettings["tiredMessage"];
-            Console.WriteLine(tiredMessage);            Console.WriteLine("Program has finished. Press enter to quit.", Color.Aquamarine);            Console.ReadKey();
+            Console.WriteLine(greeting);
+            string tiredMessage = ConfigurationManager.AppSettings["tiredMessage"];
+            Console.WriteLine(tiredMessage);
+            Console.WriteLine("Program has finished. Press enter to quit.", Color.Aquamarine);
+            Console.ReadKey();
+
 
 
         }
